@@ -1,101 +1,99 @@
-# 產品需求文檔 (Product Requirements Document)
+Create a complete, maintainable, and optimized Next.js App Router project. The design should be unique and avoid generic AI-generated looks, with custom-designed components that reflect the brand's personality.
 
-> 💡 **給 Vibe Coder 的說明**: 這是您表達創意的空間！請在下方各個段落中描述您理想中的網頁設計。不需要懂程式碼，只要用文字描述您的想法即可。AI 會根據您的描述來實現網頁。
+## Project Structure & Maintainability:
+- **Next.js App Router**: Use the latest App Router conventions.
+- **Modular Components**: Each major section (Hero, Features, Testimonials, etc.) should be its own reusable React component file (e.g., `components/sections/HeroSection.tsx`).
+- **Layout**: Implement a global layout in `app/layout.tsx`.
+- **Page**: Assemble the sections in `app/page.tsx`.
+- **UI Components**: Create custom UI components (e.g., custom cards, buttons) in `components/ui/` if they deviate significantly from shadcn/ui defaults.
+- **Utilities**: Use `lib/utils.ts` for helper functions.
+- **Clean Code**: Ensure code is well-organized, readable, and follows best practices for a scalable project.
+- **Assets**: Place images and other static assets in the `public/` directory.
 
-## 🎯 核心設計理念
+## Brand DNA & Custom Component Style:
+**Overall Style**: 奢華高端
+**Color Scheme**: 粉紅色系
+**Additional Requirements**: 我喜歡很多的動畫效果
 
-<!-- 請在這裡描述您的網站的核心理念和目標受眾 -->
-<!-- 範例：我想要一個極簡風格的精品購物網站，目標客群是追求品質生活的都市白領 -->
+**Custom Component Design Rules (Crucial for Uniqueness)**:
+- **NO standard shadcn/ui component look**: Design custom variants for cards, buttons, inputs, etc.
+- **Containers**: Use unique shapes (e.g., floating panels, tilted boxes, layered elements), creative borders, custom shadows, and non-rectangular forms.
+- **Buttons**: Implement distinct designs (e.g., pill shapes, custom hover states, gradient borders, morphing effects).
+- **Typography**: Create a custom hierarchy with varied font weights, sizes, and line heights that reflect the brand.
+- **Spacing**: Break traditional grid patterns; use innovative whitespace and visual rhythm.
+- **Imagery**: Apply unique image treatments (e.g., custom masks, creative overlays, asymmetric crops).
+- **Asymmetry**: Embrace offset elements, varied heights, and creative alignments to avoid a generic feel.
+- **Backgrounds**: Utilize subtle patterns, gradient meshes, or geometric shapes instead of flat colors.
 
-*請在此處填寫您的設計理念...*
+## Page: 現代企業官網
+### Section: 垂直側邊欄 (navigation)
+Nav: creative menu design, custom hover states, unique mobile menu
+Background: #FFFFFF with creative treatment
 
-## 🏗️ 頁面佈局與結構
+### Section: 輪播滑塊 (hero)
+Creative hero: asymmetric layout, custom button with gradient border, floating elements
+Title: "精選故事"
+Subtitle: "滑動瀏覽我們最新的更新。"
+Background: #E5E7EB with creative treatment
 
-<!-- 請描述您希望的頁面佈局 -->
-<!-- 範例：頂部要有簡潔的導航欄，主體區域採用網格布局展示商品，底部要有聯絡資訊 -->
+### Section: 圓形式 (stats)
+Stats: creative number displays, custom backgrounds, animated counters
+Title: "數據一覽"
+Stats: 3 metrics, creative number displays
+Background: #FFFFFF with creative treatment
 
-### 導航區域
-*請描述導航欄的設計...*
+### Section: 帶圖示的網格 (features)
+Feature cards: tilted containers, creative icons, varied heights, custom hover effects
+Title: "強大的功能"
+Subtitle: "專為速度、安全性和可擴展性而設計。"
 
-### 主要內容區域
-*請描述主要內容的排版方式...*
+### Section: 單一突出 (testimonials)
+Testimonial design: quote bubbles, creative author layouts, asymmetric cards
+Title: "來自我們尊貴客戶的一句話"
+Testimonials (1): Creative quote layouts
+Background: #111827 with creative treatment
 
-### 頁尾區域
-*請描述頁尾的內容和設計...*
+### Section: 深色背景，兩個按鈕 (cta)
+CTA design: morphing button, creative background, unique shape containers
+Title: "掌控您的未來"
+Subtitle: "選擇適合您的道路。"
+Background: #1F2937 with creative treatment
 
-## 🛍️ 商品展示方式
+### Section: 電子報訂閱 (footer)
+Footer: creative column layouts, custom dividers, unique link styling
+Background: #1e3a8a with creative treatment
 
-<!-- 請描述您希望如何展示商品 -->
-<!-- 範例：每個商品用卡片展示，滑鼠懸停時有輕微放大效果，顯示商品圖片、名稱和價格 -->
+## Page: 餐廳官網
+### Section: 垂直側邊欄 (navigation)
+Nav: creative menu design, custom hover states, unique mobile menu
+Background: #FFFFFF with creative treatment
 
-### 商品卡片設計
-*請描述單個商品的展示方式...*
+### Section: 網格佈局 (hero)
+Creative hero: asymmetric layout, custom button with gradient border, floating elements
+Title: "多個亮點"
+Subtitle: "同時展示各個方面。"
+Background: #FFFFFF with creative treatment
 
-### 商品列表佈局
-*請描述多個商品如何排列...*
+### Section: 網格功能 (features)
+Feature cards: tilted containers, creative icons, varied heights, custom hover effects
+Title: "我們的功能"
+Subtitle: "了解更多關於我們令人驚豔的功能"
+Background: #f0f0f0 with creative treatment
 
-### 互動效果
-*請描述用戶與商品互動時的效果...*
+### Section: 環境展示 (gallery)
+Gallery: creative grid breaks, custom image masks, floating hover effects
+Title: "餐廳環境"
+Gallery: 3 images, creative grid layout
+Background: #F9FAFB with creative treatment
 
-## 🎨 視覺風格與品牌
+### Section: 訂位表單 (contactForm)
+Form design: floating labels, creative input styles, custom submit button
+Title: "立即訂位"
+Background: #1F2937 with creative treatment
 
-<!-- 請描述您期望的視覺風格 -->
-<!-- 範例：使用柔和的粉色系，搭配圓角設計，營造溫暖友善的感覺 -->
-
-### 色彩方案
-*請描述主要顏色和輔助顏色...*
-
-### 字體選擇
-*請描述標題和正文的字體風格...*
-
-### 整體氛圍
-*請描述網站要傳達的感覺...*
-
-## ✨ 用戶互動與動畫
-
-<!-- 請描述您希望的互動效果和動畫 -->
-<!-- 範例：按鈕點擊時有漣漪效果，頁面載入時商品卡片依次淡入 -->
-
-### 按鈕和連結
-*請描述互動元素的行為...*
-
-### 過渡動畫
-*請描述頁面元素的動畫效果...*
-
-### 載入效果
-*請描述資料載入時的視覺反饋...*
-
-## 📱 響應式設計需求
-
-<!-- 請描述在不同設備上的顯示需求 -->
-<!-- 範例：手機上商品改為單列顯示，平板上顯示兩列，桌面顯示四列 -->
-
-### 手機版
-*請描述手機上的顯示方式...*
-
-### 平板版
-*請描述平板上的顯示方式...*
-
-### 桌面版
-*請描述桌面上的顯示方式...*
-
-## 🎯 特殊功能需求
-
-<!-- 如果有特殊功能需求，請在這裡描述 -->
-<!-- 範例：需要商品搜索功能、價格篩選功能、商品詳情彈窗等 -->
-
-*請列出您需要的特殊功能...*
-
-## 💬 其他補充說明
-
-<!-- 任何其他想法或參考資料都可以寫在這裡 -->
-
-*請補充其他說明...*
-
----
-
-> 📌 **提示**: 
-> - 請盡可能詳細地描述您的想法
-> - 可以提供參考網站或圖片連結
-> - 不確定的地方可以留空，AI 會使用預設設計
-> - 記得保存文件後，在 Issue 中 @claude 來啟動 AI 開發流程！
+## Final Creative & Technical Requirements:
+**Technical**: Use shadcn/ui components as a base, but heavily customize their appearance with Tailwind CSS to achieve the unique design. Ensure full responsiveness (mobile-first).
+**Creative Mandate**: Every single component and section must feel hand-crafted and uniquely tailored to the brand, not like a standard template. Focus on innovative visual patterns and interactions.
+**Brand Integration**: Components should embody the brand's personality, story, and style in their design, shapes, and animations.
+**Avoid**: Generic, off-the-shelf shadcn/ui looks, predictable layouts, and designs that scream 'AI-generated'.
+**Embrace**: Bold creative interpretation, strong brand identity expression, memorable visual moments, and storytelling through design.
